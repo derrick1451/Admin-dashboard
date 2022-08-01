@@ -1,0 +1,235 @@
+/* reset default browser styles */
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Roboto",sans-serif;
+}
+.wrapper {
+    background-color: #efefef;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+ul li {
+    list-style: none;
+}
+/* header section */
+.header {
+    grid-column: 2/3;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.top-nav {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 12px 0;
+    background-color: #fff;
+    max-height: 70px;
+    margin-top: 10px;
+}
+.search {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    padding: 10px 20px;
+}
+input {
+    border: 1px solid #efefef;
+    border-radius: 5px;
+    height: 20px;
+    background-color: #efefef;
+    width: 80%;
+}
+.side-info {
+    display: grid;
+    grid-template-columns: auto auto 2fr;
+    padding: 10px;
+    margin-left: 50px;
+    gap: 20px;
+
+}
+.side-info h3{
+    font-weight: 400;
+}
+.down-nav {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    padding: 15px 25px;
+}
+.profile {
+    display: grid;
+    grid-template-columns: auto 2fr;
+    align-items: center;
+    gap: 20px;
+}
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+button{
+    font-size: 1rem;
+    color: #fff;
+    padding: 6px 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: #0284c7;
+}
+button:hover {
+    background-color: #0ea5e9;
+}
+/* control the image size and create roumded borders */
+.cat-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.cat-image-2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+/* side bar designs */
+.side-bar {
+    grid-row: 1/3;
+    grid-column: 1/2;
+    background-color: #0284c7;
+}
+.side-bar .head {
+    display: grid;
+    grid-template-columns: 0.1fr 0.1fr;
+    column-gap: 15px;
+    padding:15px 10px;
+    align-items: center;
+    color: white;
+}
+.side-bar-lists ul li {
+    display: grid;
+    grid-template-columns:0.1fr 0.1fr;
+    padding: 8px 14px;
+    color: white;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.configuration-nav {
+    padding: 30px 14px 16px 14px;
+}
+.configuration-nav ul li {
+    display: grid;
+    grid-template-columns: 0.1fr 0.1fr;
+    color: #fff;
+    padding: 7px 0;
+    column-gap: 15px;
+    align-items: center;
+}
+/* main-content grid */
+.main-content {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    padding: 20px;
+}
+.my-projects {
+    grid-row: 1/3;
+}
+.my-projects h2 {
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+.my-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.my-cards .card {
+    border-left: 10px solid #f59e0b;
+    border-radius: 8px;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center; 
+    padding: 20px; 
+    gap: 10px;
+    
+}
+.card .card-text p {
+    font-weight: lighter;
+}
+.card .card-text h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 5px;
+}
+.card .card-image {
+    justify-self: right;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    padding: 5px;
+}
+
+/* announcements container */
+.announcements {
+    grid-column: 2/3;
+}
+.announcements h2 {
+    margin-bottom: 10px;
+    font-size:1.3rem;
+    font-weight: 400;
+    padding: 10px;
+}
+.article-container {
+    background-color: #fff;
+    padding: 14px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+.article-container h3 {
+    font-size: .9rem;
+    font-weight: 400;
+    padding: 6px;
+}
+.article-container p {
+    font-weight: 300;
+    padding: 6px;
+}
+.article-container p.border {
+    border-bottom: 2px solid #efefef;
+}
+/* trending container */
+.trending h2 {
+    margin-bottom: 16px;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.trending-nav {
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 10px 0;
+}
+.trending-nav ul li {
+    display: grid;
+    grid-template-columns: 0.1fr 0.7fr;
+    align-items: center;
+    column-gap: 16px;
+    padding: 15px 15px;
+    margin-left: 15px;
+}
+.trending-nav ul li h4 {
+    font-weight: 400;
+    font-size: .9rem;
+}
+.trending-nav ul li p {
+    font-weight: lighter;
+    font-size: .8rem;
+}
