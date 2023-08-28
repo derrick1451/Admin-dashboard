@@ -33,7 +33,7 @@ ul li {
 .search {
     display: grid;
     grid-template-columns: auto 1fr;
-    gap: 10px;
+    gap: 9px;
     padding: 10px 20px;
 }
 input {
