@@ -1,4 +1,7 @@
 /* reset default browser styles */
+* {
+    padding:0;
+}
 .wrapper {
     background-color: #efefef;
     display: grid;
