@@ -1,1 +1,1 @@
-### Admin dashboards
+### Admin dashboard
